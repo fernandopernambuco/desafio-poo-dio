@@ -6,10 +6,10 @@ public class Mentoria extends Conteudo {
 
     private LocalDate data;
 
-    // Construtor com parâmetros para inicializar a mentoria com título, descrição e data
+    // Construtor para inicializar a mentoria com título, descrição e data
     public Mentoria(String titulo, String descricao, LocalDate data) {
-        setTitulo(titulo);
-        setDescricao(descricao);
+        setTitulo(titulo);  // Chamando o setter da classe pai
+        setDescricao(descricao);  // Chamando o setter da classe pai
         this.data = data;
     }
 
@@ -27,13 +27,13 @@ public class Mentoria extends Conteudo {
         this.data = data;
     }
 
-    // Método toString() para exibir os detalhes da mentoria
+    // Método toString() para exibir os detalhes da mentoria de forma amigável
     @Override
     public String toString() {
         return "Mentoria{" +
                 "titulo='" + getTitulo() + '\'' +
                 ", descricao='" + getDescricao() + '\'' +
-                ", data=" + data +
+                ", data=" + data +  // Exibe a data diretamente
                 '}';
     }
 }
